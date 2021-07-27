@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monaco Editor Demo</title>
+  <link type="text/css" rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="app">
+  <div class="sidebar">
+    <div class="menu">
+      <button id="new-file" class="action-button">New File</button>
+      <Label class="action-button">
+        <input
+          id="upload-file"
+          type="file"
+          accept="image/jpeg,image/png,image/gif,image/x-icon,image/svg"
+        >
+        Upload
+      </Label>
+      <button id="export-zip" class="action-button">Export Zip</button>
+      <button id="preview" class="action-button">Preview</button>
+    </div>
+    <ul class="files">
+    </ul>
+  </div>
+  <div class="code">
+    <div id="editor"></div>
+    <div id="img-viewer"></div>
+  </div>
+  <div class="preview-container">
+    <iframe id="preview-frame" src=""></iframe>
+  </div>
+</div>
+
+<script src="/node_modules/monaco-editor/min/vs/loader.js"></script>
+
+<script src="./index.js" type="module"></script>
+</body>
+</html>

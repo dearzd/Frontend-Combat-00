@@ -1,3 +1,5 @@
 .DS_Store
 node_modules
 .idea/
+
+week3/monaco-editor-vue-preview/client/preview/

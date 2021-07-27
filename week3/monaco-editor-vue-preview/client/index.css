@@ -1,0 +1,185 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgb(21, 21, 21);
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #999;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+#editor, #img-viewer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#img-viewer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#img-viewer img {
+  max-width: 100%;
+}
+
+.sidebar {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 240px;
+  max-width: 400px;
+  padding: 8px 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.code {
+  flex: 1
+}
+
+.preview-container {
+  flex: 1;
+}
+
+#preview-frame {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 0;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 8px;
+}
+
+.menu .action-button {
+  display: inline-block;
+  line-height: 26px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 2px;
+  background-color: rgb(36, 36, 36);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(204, 204, 204);
+  transition: background-color 100ms ease-in 0s;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.menu .action-button:hover {
+  background-color: rgb(74, 74, 74);
+  color: white;
+}
+
+input[type=file] {
+  display: none;
+}
+
+.files {
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 16px 0;
+  overflow: auto;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px 0 14px;
+  line-height: 28px;
+}
+
+.file-item:hover {
+  color: rgb(230, 230, 230);
+  cursor: pointer;
+}
+
+.file-item.current {
+  background-color: rgb(36, 36, 36);
+  cursor: pointer;
+}
+
+.file-item .delete-file {
+  flex: 0 0 auto;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 0;
+  background: 0;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(204, 204, 204);
+  transition: background-color 100ms ease-in 0s;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.file-item .delete-file:hover {
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+
+.file-item .delete-file svg {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.file-item .file-name {
+  flex: 1;
+}
+
+.file-icon {
+  flex: 0 0 auto;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-position: 0 center;
+  background-size: 16px;
+}
+
+.file-icon.html {
+  background-image: url('https://cdn.jsdelivr.net/gh/PKief/vscode-material-icon-theme@master/icons/html.svg');
+}
+
+.file-icon.vue {
+  background-image: url('https://cdn.jsdelivr.net/gh/PKief/vscode-material-icon-theme@master/icons/vue.svg');
+}
+
+.file-icon.js {
+  background-image: url('https://cdn.jsdelivr.net/gh/PKief/vscode-material-icon-theme@master/icons/javascript.svg');
+}
+
+.file-icon.png,
+.file-icon.jpg,
+.file-icon.jpeg {
+  background-image: url('https://cdn.jsdelivr.net/gh/PKief/vscode-material-icon-theme@master/icons/image.svg');
+}
+
+.file-icon.ico {
+  background-image: url('https://cdn.jsdelivr.net/gh/PKief/vscode-material-icon-theme@master/icons/favicon.svg');
+}
+
+.file-icon.md {
+  background-image: url('https://cdn.jsdelivr.net/gh/PKief/vscode-material-icon-theme@master/icons/readme.svg');
+}
