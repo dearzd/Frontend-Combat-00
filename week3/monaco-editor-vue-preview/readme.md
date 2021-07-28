@@ -1,5 +1,7 @@
 # Monaco Editor Vue Test
 
+简单的演示请看下面 **Gif 演示**
+
 ## 功能
 
 - 实现作业要求：网页编辑 vue 代码，点击 preview 按钮，fetch 发送请求，后端 NodeJS 接受请求编译文件，通知前端渲染页面。
@@ -12,3 +14,7 @@
 2. `npm instasll`
 3. `npm run server`
 4. `go to http://localhost:8080`
+
+## Gif 演示
+
+![Gif Demo](./demo.gif)
