@@ -20,9 +20,9 @@ const upload = multer({
 const app = express();
 const port = 8080;
 
-app.use(express.static('../client'));
-app.use('/node_modules', express.static('../node_modules'));
-app.use('/sourceCode', express.static('./cache/sourceCode'));
+app.use(express.static(path.resolve(__dirname, '../client')));
+app.use('/node_modules', express.static(path.resolve(__dirname, '../node_modules')));
+app.use('/sourceCode', express.static(path.resolve(__dirname, './cache/sourceCode')));
 
 app.use(express.json());
 
