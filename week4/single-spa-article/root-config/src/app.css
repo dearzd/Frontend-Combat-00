@@ -1,0 +1,17 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  gap: 24px;
+}
+
+.sidebar {
+  flex: 0 0 240px;
+}
+
+.main {
+  flex: 1;
+}

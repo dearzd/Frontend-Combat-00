@@ -1,0 +1,42 @@
+{
+  "articleId-1": {
+    "name": "Article 1",
+    "content": "This is article 1."
+  },
+  "articleId-2": {
+    "name": "Article 2",
+    "content": "This is article 2."
+  },
+  "articleId-3": {
+    "name": "Article 3",
+    "content": "This is article 3."
+  },
+  "articleId-4": {
+    "name": "Article 4",
+    "content": "This is article 4."
+  },
+  "articleId-5": {
+    "name": "Article 5",
+    "content": "This is article 5."
+  },
+  "articleId-6": {
+    "name": "Article 6",
+    "content": "This is article 6."
+  },
+  "articleId-7": {
+    "name": "Article 7",
+    "content": "This is article 7."
+  },
+  "articleId-8": {
+    "name": "Article 8",
+    "content": "This is article 8."
+  },
+  "articleId-9": {
+    "name": "Article 9",
+    "content": "This is article 9."
+  },
+  "articleId-10": {
+    "name": "Article 10",
+    "content": "This is article 10."
+  }
+}
