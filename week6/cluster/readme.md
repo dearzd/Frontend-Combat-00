@@ -2,6 +2,7 @@
 
 ## 描述
 - 作业实现有2个版本，一个是用 child_process 实现的，一个是用 cluster 实现的。
+- 作业实现 worker 异常退出重启功能。
 - 用 child_process 实现的包含3个文件（master.js, worker.js），运行步骤：
   - `node master.js` 启动 master；
   - `node client.js` 运行客户端测试。
