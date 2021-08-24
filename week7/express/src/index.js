@@ -33,11 +33,23 @@ MongoClient.connect(uri, async (err, client) => {
     });
   });
 
+  app.put('/mongo/todos/week7/:name', (req, res) => {
+    const name = req.params.name;
+    const data = req.body;
+
+    console.log(data);
+
+    db.collection('week7').updateOne({ name }, { $set: data }).then(() => {
+      res.json(data);
+    });
+  });
+
   app.delete('/mongo/todos/week7/:name', (req, res) => {
-    console.log(req.params.name);
+    const name = req.params.name;
+    console.log(name);
 
     db.collection('week7').deleteOne({
-      name: req.params.name
+      name: name
     }).then(() => {
       res.send('ok');
     });
