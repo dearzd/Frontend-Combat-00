@@ -1,4 +1,4 @@
-# Express with MongoDB
+# Express with MongoDB and MySQL
 
 由于视频时间比较长 (4min)，演示请下载 [**Demo.mp4 (8M)**](./demo.mp4) 观看
 
