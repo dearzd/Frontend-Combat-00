@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<!--<script src="./errotTest.js" type="module"></script>-->
+
+<script src="./dist/ostrich.js"></script>
+
+<script>
+  setTimeout(() => {
+    const a = b;
+  }, 500);
+
+  setTimeout(() => {
+    const img = document.createElement('img');
+    img.src = './logo.png';
+    document.body.appendChild(img);
+  }, 500);
+
+  setTimeout(() => {
+    const result = new Promise((resolve, reject) => {
+      reject('124');
+    });
+
+    result.then((data) => console.log(data)/*, (err) => console.log(err)*/);
+  }, 500);
+
+  setTimeout(() => {
+    fetch('http://localhost:8080/list')
+      .then((data) => console.log(data), (err) => console.log(err));
+  }, 500);
+</script>
+</body>
+</html>
